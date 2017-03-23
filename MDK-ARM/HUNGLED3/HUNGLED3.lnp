@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"hungled3\startup_stm32f103xb.o"
+"hungled3\stm32f1xx_hal_msp.o"
+"hungled3\main.o"
+"hungled3\stm32f1xx_it.o"
+"hungled3\stm32f1xx_hal_tim.o"
+"hungled3\stm32f1xx_hal_pwr.o"
+"hungled3\stm32f1xx_hal_gpio_ex.o"
+"hungled3\stm32f1xx_hal_dma.o"
+"hungled3\stm32f1xx_hal.o"
+"hungled3\stm32f1xx_hal_cortex.o"
+"hungled3\stm32f1xx_hal_gpio.o"
+"hungled3\stm32f1xx_hal_flash_ex.o"
+"hungled3\stm32f1xx_hal_rcc_ex.o"
+"hungled3\stm32f1xx_hal_tim_ex.o"
+"hungled3\stm32f1xx_hal_flash.o"
+"hungled3\stm32f1xx_hal_rcc.o"
+"hungled3\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "HUNGLED3\HUNGLED3.sct"
+
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "HUNGLED3.map" -o HUNGLED3\HUNGLED3.axf
